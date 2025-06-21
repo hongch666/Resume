@@ -1,0 +1,15 @@
+\subsection{\textbf{图像风格迁移平台} \hspace{2cm} {2024.09 -- 2024.11}}
+\fontsize{11pt}{0}{\textbf{项目描述}：基于Flask的Web应用，集成VGG19神经网络，实现用户上传内容图和风格图后，自动完成图像风格迁移，生成融合两者特征的艺术作品。}
+\begin{normalsize}
+  \begin{itemize}
+    \item \textbf{项目功能}：支持用户在线上传内容图与风格图，系统自动融合生成风格化新图像，并可在线预览与下载，提升普通用户的AI艺术体验。
+    \item \textbf{相关技术}：Python/Flask/VGG19/PyTorch
+    \item \textbf{个人负责}：独立完成Web端整体开发，基于Flask实现前后端交互、文件上传与结果展示，负责VGG19模型的迁移学习、推理流程及性能优化。
+    \item \textbf{技术亮点}：
+      \setlength{\itemindent}{1em}
+      \item[$\circ$] \textbf{深度学习集成}：利用PyTorch加载预训练VGG19模型，优化风格迁移算法，提升生成图像的艺术表现力和细节还原度。
+      \item[$\circ$] \textbf{高效推理}：通过GPU加速与异步任务队列，单次风格迁移平均耗时缩短至2.1s，支持多用户并发访问。
+      \item[$\circ$] \textbf{前后端分离}：采用AJAX实现图片上传与结果异步刷新，提升用户体验，前端界面美观简洁，支持移动端自适应。
+      \item[$\circ$] \textbf{安全与容错}：实现上传文件类型校验与异常处理，防止恶意文件上传，系统稳定性高。
+  \end{itemize}
+\end{normalsize}

@@ -1,0 +1,19 @@
+\subsection{\textbf{外卖点单和管理平台} \hspace{2cm}{2024.12 -- 2025.04}}
+\fontsize{11pt}{0}{\textbf{项目描述}：采用前后端分离的技术，实现用户在小程序上下单，店铺员工通过浏览器进行菜品、套餐和订单等的管理和配送，且员工在网页端可以使用本地大模型聊天功能辅助管理对应的相关信息。}
+    \begin{normalsize}
+      \begin{itemize}
+        \item \textbf{项目功能}：用户通过小程序完成下单、支付和订单查询，商家员工则在网页端管理菜品、套餐和订单等信息，​平台还集成本地部署的大语言模型，员工可通过聊天界面获取管理建议和信息查询，提升运营效率。
+        \item \textbf{相关技术}: SpringBoot/SpringCloud/RabbitMQ/MyBatisPlus/MySQL/Redis/Ollama/Vue.js
+        \item \textbf{个人负责}：设计高可用微服务架构，主导核心服务开发（订单/支付/菜品/大模型服务），完成Ollama大模型本地化部署和接入项目，并完成员工网页端前端模块开发（菜品管理/员工管理/销售报表）。
+        \item \textbf{技术亮点}：
+        \setlength{\itemindent}{1em} % 子项缩进调整
+          \item[$\circ$] \textbf{后端架构}：采用Spring Boot的Controller-Service-DAO分层模式，将员工信息管理、菜品管理、订单管理等模块解耦，提升代码复用率和可维护性。
+          \item[$\circ$] \textbf{微服务架构升级}：采用Spring Cloud组件（如Nacos服务注册发现、Gateway网关等），将订单、用户、菜品管理等模块拆分为独立服务。
+          \item[$\circ$] \textbf{RabbitMQ异步解耦​​}：通过RabbitMQ实现微服务之间的异步调用，将订单创建、支付处理等操作解耦，提升系统吞吐量50\%。
+          \item[$\circ$] \textbf{Redis缓存}：使用主从+哨兵模式进行Redis的部署，将菜品信息与套餐信息进行缓存，使用户在小程查询时间从600ms降至70ms，支撑10万+的并发请求。
+          % \item[$\circ$] \textbf{JWT鉴权}：基于自定义拦截器和ThreadLocal实现员工的认证与鉴权，实现200ms内完成权限校验，支撑日均3000+次的安全访问。
+          \item[$\circ$] \textbf{微信登录集成}：在小程序端集成微信登录功能，通过获取code调用微信开放平台接口实现用户身份验证，并结合后端JWT令牌机制与自定义拦截器完成登录校验与用户信息绑定，支持日均300+ 次稳定认证请求。
+          \item[$\circ$] \textbf{前端Echarts 报表展示}：在员工端集成 Echarts 图表库，支持对近30日订单量、菜品销量等数据进行可视化展示，提供日均订单趋势图、品类销售分布图等分析报表，提升商家对运营数据的洞察力，辅助实现约20\%的运营决策效率提升。
+          \item[$\circ$] \textbf{本地大模型接入}：使用Ollama进行本地大模型的部署，并通过SpringAI的Ollama依赖进行后端API调用，实现员工智能处理订单请求，提升约30\%的出餐效率。
+        \end{itemize}
+    \end{normalsize}

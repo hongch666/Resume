@@ -1,0 +1,45 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+\usepackage{graphicx}
+\usepackage{tabu}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}  
+\usepackage{zh_CN-Adobefonts_external} % 
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage{subfig}   %并排图片宏包
+\usepackage{float}    %图片浮动位置
+
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\input{personal_info} % 引入个人信息文件
+
+\input{education} % 引入教育背景文件
+
+\section{专业技能}
+\begin{normalsize}
+  \begin{itemize}
+    \input{db}
+    \input{java}
+    \input{go_mini}
+    \input{node_mini}
+    \input{common}
+    
+  \end{itemize}
+\end{normalsize}
+
+\input{practice}
+
+
+\section{项目经历}
+
+\input{java_proj} % 引入Java项目经历文件
+
+\input{go_proj} % 引入Go项目经历文件
+
+\input{awards} % 引入荣誉奖项文件
+
+\end{document}

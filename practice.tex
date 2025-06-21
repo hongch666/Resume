@@ -1,0 +1,19 @@
+\section{实习经历}
+\datedsubsection{\textbf{广州拓扑网络技术有限公司}\hspace{2.5cm}后端开发实习生}{2025.05 -- 2025.08}
+\fontsize{11pt}{0}{\textbf{实习描述}：参与基于NestJS的企业级RPA管理平台开发，负责实现机器人、任务及调度模块后端逻辑，平台支持对影刀（Yingdao）RPA机器人的生命周期管理、任务配置与高并发调度。}
+    \begin{normalsize}
+      \begin{itemize}
+        \item \textbf{核心职责}：
+        \setlength{\itemindent}{1em} % 子项缩进调整
+          \item[$\circ$] \textbf{后端架构}：参与后端接口开发，基于NestJS框架实现机器人、任务、调度等模块接口，完成30+个接口的编写与联调。
+          \item[$\circ$] \textbf{非阻塞I/O}：充分利用Node.js异步事件驱动与非阻塞I/O模型，在任务高并发调度与状态修改场景中保持系统高吞吐与低延迟，稳定支撑千级并发访问请求。
+          \item[$\circ$] \textbf{数据库框架}：使用TypeORM构建数据模型与多表关联关系，优化查询逻辑，提升机器人任务检索性能约40\%。
+          \item[$\circ$] \textbf{MongoDB日志记录}：使用MongoDB结合Mongoose建模，记录机器人执行任务关键行为（如采集商品、上架商品等），支持日均2万+操作日志高效写入，突破关系型数据库字段限制。
+          \item[$\circ$] \textbf{Redis缓存}：实现机器人状态缓存和任务缓存，接口查询响应时间由原500ms降低至 20ms，支撑10万级高并发状态请求。
+          \item[$\circ$] \textbf{RabbitMQ异步解耦​​}：负责集成RabbitMQ，实现任务异步投递与空闲机器人动态分配，系统日均调度任务数超5000条，任务分发延迟控制在200ms内。
+          \item[$\circ$] \textbf{JWT鉴权}：实现基于JWT的登录鉴权，并结合自定义角色守卫与权限守卫进行接口访问控制。
+          % \item[$\circ$] \textbf{接口文档}：基于Swagger自动生成接口文档，覆盖率达100\%，显著提升前后端联调效率，减少沟通成本约30\%。
+        \setlength{\itemindent}{0em} % 子项缩进调整
+        \item \textbf{相关技术}: NestJS/TypeORM/MySQL/Redis/MongoDB/RabbitMQ/JWT
+        \end{itemize}
+    \end{normalsize}

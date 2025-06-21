@@ -1,0 +1,16 @@
+\subsection{\textbf{教师管理平台} \hspace{2cm}{2024.07 -- 2024.09}}
+\fontsize{11pt}{0}{\textbf{项目描述}：教师管理平台，实现对教师信息、课程安排、考勤记录等的综合管理，提升学校的人事管理效率。}
+  \begin{normalsize}
+    \begin{itemize}
+    \item \textbf{项目功能}：管理员可以添加、编辑、删除教师信息，支持按部门、职称等条件查询，而且能够制定和调整教师的课程安排，记录教师的出勤情况等。
+    \item \textbf{相关技术}: Python/FastAPI/SQLAlchemy/MySQL/React/Ant Design
+    \item \textbf{个人负责}：负责后端服务架构设计与核心模块开发，基于FastAPI实现教师信息管理、课程编排与考勤统计模块，设计并优化MySQL数据库结构，并使用React和Ant Design完成部分前端页面模块的实现。
+    \item \textbf{技术亮点}：
+    \setlength{\itemindent}{1em} % 子项缩进调整
+      \item[$\circ$] \textbf{后端架构}：采用FastAPI路由-控制层-服务层结构划分，结合中间件实现功能解耦，将教师信息、课程安排与考勤模块清晰拆分，提升代码可维护性和扩展性。
+      \item[$\circ$] \textbf{数据库优化}：对教师工号、部门ID、课程时间等字段建立复合索引，将教师信息综合查询响应时间从1.8s缩短至0.4s。
+      \item[$\circ$] \textbf{异步高并发}：利用FastAPI的异步特性和Uvicorn服务器，在高并发场景下保持接口响应的高可用性和吞吐量，系统在模拟并发1000+请求时仍保持稳定运行，无明显性能瓶颈。
+      \item[$\circ$] \textbf{JWT鉴权}：基于FastAPI中间件与PyJWT，实现用户认证与权限控制，权限校验平均耗时控制在200ms以内，支持日均3000+次安全访问请求。
+      \item[$\circ$] \textbf{前端UI优化}：前端采用React结合Ant Design组件库，快速搭建高可用的管理后台，提升表单、表格、弹窗等交互体验，实现教师信息、课程安排等模块的高效可视化管理。
+    \end{itemize}
+  \end{normalsize}

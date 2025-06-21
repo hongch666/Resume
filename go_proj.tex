@@ -1,0 +1,15 @@
+\subsection{\textbf{电子商务平台} \hspace{2cm}{2024.10 -- 2024.12}}
+\fontsize{11pt}{0}{\textbf{项目描述}：采用前后端分离架构，实现用户在线购物和商家后台管理，包括用户、商品、订单、分类等模块的统一管理。}
+  \begin{normalsize}
+    \begin{itemize}
+    \item \textbf{项目功能}：电子商务平台，支持用户下单、搜索商品、查看订单等功能，商家可通过后台对商品信息和订单进行管理。
+    \item \textbf{相关技术}: Go/Gin/Gorm/MySQL/ElasticSearch/React/Ant Design
+    \item \textbf{个人负责}：采用Gin+Gorm构建业务模块（商品中心/订单中心/用户中心/搜索服务），实现ElasticSearch搜索集群并接入项目的搜索服务，优化搜索接口性能，并负责管理端和用户端的React项目开发，实现商品、订单、用户等模块的管理和用户商品浏览、下单等核心功能。
+    \item \textbf{技术亮点}：
+    \setlength{\itemindent}{1em} % 子项缩进调整
+      \item[$\circ$] \textbf{后端架构}：基于Gin框架的轻量级高性能特性，采用分层架构设计（路由层→ 逻辑层→ 数据访问层），通过Goroutine实现异步非阻塞I/O模型，使API接口响应时间下降至60ms。
+        \item[$\circ$] \textbf{JWT鉴权}：使用JWT鉴权中间件实现管理员和用户的认证与鉴权，实现200ms内完成权限校验，支撑日均3000+次的安全访问。
+        \item[$\circ$] \textbf{ElasticSearch搜索优化}：集成ElasticSearch实现商品搜索功能，支持全文检索和模糊匹配，将响应时间从300ms优化至60ms，有效提升搜索结果的匹配精度。
+        \item[$\circ$] \textbf{前端页面}：使用React进行管理端和用户端开发，基于Ant Design组件库实现商品、订单、用户等模块的高效管理界面，优化表单、表格与交互流程，提升用户操作体验和系统易用性。
+    \end{itemize}
+  \end{normalsize}
