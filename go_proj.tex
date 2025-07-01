@@ -1,15 +1,15 @@
-\subsection{\textbf{电子商务平台} \hspace{2cm}{2024.10 -- 2024.12}}
-\fontsize{11pt}{0}{\textbf{项目描述}：基于Go语言和Gin框架的前后端分离电商平台，集成ElasticSearch搜索引擎提供高性能商品检索，具备完整的用户购物流程与商家运营管理系统。}
+\subsection{\textbf{高校学生二手交易场景下的电子商务平台} \hspace{2cm}{2024.10 -- 2024.12}}
+\fontsize{11pt}{0}{\textbf{项目描述}：面向高校学生群体的二手物品交易平台，基于Go语言和Gin框架前后端分离架构，支持校园闲置物品发布、搜索与交易撮合，集成ElasticSearch提升多条件商品检索效率，助力学生低成本获取学习生活用品。}
   \begin{normalsize}
     \begin{itemize}
-    \item \textbf{项目功能}：用户端支持商品搜索、下单、订单查询；商家端实现商品管理、订单处理、数据统计等功能。
+    \item \textbf{项目功能}：学生端支持二手物品发布、搜索、在线沟通与交易，支持校园认证、失物招领等特色功能；管理端实现商品审核、交易统计、用户管理等。
     \item \textbf{相关技术}: Go/Gin/Gorm/MySQL/ElasticSearch/React/Ant Design
     \item \textbf{个人负责}：负责系统架构设计与核心业务模块开发，基于Gin+Gorm实现商品、订单、用户管理等服务，集成ElasticSearch搜索引擎优化商品检索性能，并使用React+Ant Design完成前端界面开发。
     \item \textbf{技术亮点}：
     \setlength{\itemindent}{1em} % 子项缩进调整
       \item[$\circ$] \textbf{后端架构}：基于Gin框架的轻量级高性能特性，采用分层架构设计（路由层→ 逻辑层→ 数据访问层），通过Goroutine实现异步非阻塞I/O模型，使API接口响应时间下降至60ms。
-        \item[$\circ$] \textbf{JWT鉴权}：使用JWT鉴权中间件实现管理员和用户的认证与鉴权，实现200ms内完成权限校验，支撑日均3000+次的安全访问。
-        \item[$\circ$] \textbf{ElasticSearch搜索优化}：集成ElasticSearch实现商品搜索功能，支持全文检索和模糊匹配，将响应时间从300ms优化至60ms，有效提升搜索结果的匹配精度。
-        \item[$\circ$] \textbf{前端页面}：使用React进行管理端和用户端开发，基于Ant Design组件库实现商品、订单、用户等模块的高效管理界面，优化表单、表格与交互流程，提升用户操作体验和系统易用性。
+        \item[$\circ$] \textbf{JWT鉴权}：使用JWT鉴权中间件实现学生身份认证与权限管理，实现200ms内完成权限校验，支撑日均3000+次的安全访问。
+        \item[$\circ$] \textbf{ElasticSearch搜索优化}：集成ElasticSearch实现多条件二手商品搜索，支持品类、校区、价格区间等检索，将响应时间从300ms优化至60ms，有效提升校园二手交易的匹配效率。
+        \item[$\circ$] \textbf{前端页面}：使用React进行管理端和学生端开发，基于Ant Design组件库实现商品、订单、用户等模块的高效管理界面，优化表单、表格与交互流程，提升学生操作体验和系统易用性。
     \end{itemize}
   \end{normalsize}
