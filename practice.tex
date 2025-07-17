@@ -5,16 +5,12 @@
     \begin{itemize}
     \item \textbf{核心职责}：
     \setlength{\itemindent}{1em} % 子项缩进调整
-      \item[$\circ$] \textbf{后端框架与接口开发}：基于NestJS实现机器人、任务、调度、逆向物流等模块接口，支持影刀RPA机器人生命周期及逆向物流等业务自动化。
-      \item[$\circ$] \textbf{非阻塞I/O}：利用Node.js异步事件驱动与非阻塞I/O模型，在任务高并发调度与状态修改场景中保持系统高吞吐与低延迟，稳定支撑千级并发访问请求。
-      \item[$\circ$] \textbf{数据库框架}：使用TypeORM构建数据模型与多表关联关系，设计机器人、任务、用户等核心实体映射，通过Repository模式封装数据访问层，优化复杂查询逻辑与索引策略，提升性能约40\%。
-      \item[$\circ$] \textbf{定时任务与自动化调度}：基于Node.js定时任务（cron表达式）实现机器人定时巡检、数据同步与自动化运维，保障业务流程高可用与自动化，提升系统稳定性与运维效率。
-      \item[$\circ$] \textbf{Coze AI知识库集成}：接入Coze AI平台，构建企业知识库管理系统，实现文档自动上传、知识检索、智能问答等功能。
-      \item[$\circ$] \textbf{钉钉与JWT统一认证}：对接钉钉开放平台，支持钉钉扫码登录与消息推送，结合JWT实现统一身份认证与权限控制，日均支撑500+用户登录与消息通知，保障系统安全与高效协同。
-      \item[$\circ$] \textbf{第三方平台接口集成}：对接Shopify、Shopline等平台API，实现订单数据的自动同步与处理，支持订单状态监控与业务流程优化。
-      \item[$\circ$] \textbf{Redis缓存}：实现机器人状态缓存和任务缓存，接口查询响应时间由原500ms降低至20ms，支撑10万级高并发状态请求。
-      \item[$\circ$] \textbf{RabbitMQ异步解耦}：集成RabbitMQ，实现任务异步投递与空闲机器人动态分配，系统日均调度任务数超5000条，任务分发延迟控制在200ms内。
-      \item[$\circ$] \textbf{MongoDB日志记录}：使用MongoDB结合Mongoose建模，记录系统关键业务操作与用户行为日志，支持日均2万+操作日志高效写入，突破关系型数据库字段限制。
+      \item[$\circ$] \textbf{后端框架与数据库}：基于NestJS实现机器人、任务、调度、逆向物流等模块接口，使用TypeORM+MySQL构建数据模型与多表关联关系，通过Repository模式封装数据访问层，优化MySQL复杂查询逻辑与索引策略，提升性能约40\%。
+      \item[$\circ$] \textbf{高并发与缓存优化}：利用Node.js异步事件驱动与非阻塞I/O模型保持系统高吞吐，集成Redis缓存实现机器人状态缓存，接口响应时间由500ms降低至20ms，支撑10万级高并发请求。
+      \item[$\circ$] \textbf{消息队列与定时调度}：集成RabbitMQ实现任务异步投递与机器人动态分配，基于cron表达式实现定时巡检与数据同步，日均调度任务数超5000条，任务分发延迟控制在200ms内。
+      \item[$\circ$] \textbf{第三方平台集成}：对接影刀RPA、Coze AI、钉钉开放平台、Shopify/Shopline等API，实现RPA机器人管理、AI知识库、统一认证、订单同步等功能，日均支撑500+用户登录与消息通知。
+      \item[$\circ$] \textbf{竞对数据分析}：基于爬虫技术采集竞对商品数据，监控商品排位变化，实现价格、销量等关键指标追踪与分析，日均采集商品数据3万+条，覆盖500+竞对SKU监控。
+      \item[$\circ$] \textbf{日志记录与监控}：使用MongoDB结合Mongoose建模，记录系统关键业务操作与用户行为日志，支持日均2万+操作日志高效写入，突破关系型数据库字段限制。
     \setlength{\itemindent}{0em} % 子项缩进调整
     \item \textbf{相关技术}: NestJS/TypeORM/MySQL/Redis/MongoDB/RabbitMQ/Coze AI/钉钉开放平台
     \end{itemize}

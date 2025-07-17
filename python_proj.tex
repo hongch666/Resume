@@ -7,12 +7,9 @@
     \item \textbf{个人负责}：负责后端服务架构设计与核心模块开发，基于FastAPI实现技术文档管理、团队协作系统与讨论交互模块，设计并优化MySQL数据库结构，并使用Vue.js和Element UI完成前端页面模块的实现。
     \item \textbf{技术亮点}：
     \setlength{\itemindent}{1em} % 子项缩进调整
-      \item[$\circ$] \textbf{后端架构}：采用FastAPI路由-控制层-服务层结构划分，结合中间件实现功能解耦，将技术文档管理、团队协作与讨论模块清晰拆分，提升代码可维护性和扩展性。
-      \item[$\circ$] \textbf{数据库优化}：使用SQLAlchemy ORM进行数据建模，对文档ID、技术标签、发布时间等关键字段建立复合索引，优化查询逻辑与连接池配置，将技术文档检索响应时间从1.8s缩短至0.4s。
-      \item[$\circ$] \textbf{异步高并发}：利用FastAPI的异步特性和Uvicorn服务器，在高并发场景下保持接口响应的高可用性和吞吐量，系统在模拟并发1000+请求时仍保持稳定运行，无明显性能瓶颈。
-      \item[$\circ$] \textbf{JWT鉴权}：基于FastAPI中间件与PyJWT，实现用户认证与权限控制，权限校验平均耗时控制在200ms以内，支持日均3000+次安全访问请求。
-      \item[$\circ$] \textbf{数据分析与预测}：集成Pandas和Scikit-learn实现用户行为分析，通过机器学习算法预测文章热度和用户兴趣，构建个性化推荐系统，使用TF-IDF和余弦相似度算法实现文章智能推荐，推荐准确率达到75\%以上。
-      \item[$\circ$] \textbf{数据可视化}：基于Matplotlib和ECharts.js构建数据展示模块，实时监控文章阅读趋势、用户活跃度和评论热度，为内容运营提供数据支撑，日均处理分析数据量超过10万条记录。
-      \item[$\circ$] \textbf{前端UI优化}：前端采用Vue.js结合Element UI组件库，快速搭建高可用的博客界面，提升文章编辑器、评论区、分类导航等交互体验，实现文章发布、用户管理等模块的高效可视化操作。
+      \item[$\circ$] \textbf{后端架构与数据库优化}：采用FastAPI路由-控制层-服务层结构，使用SQLAlchemy ORM建立复合索引，优化查询逻辑与连接池配置，文档检索响应时间从1.8s缩短至0.4s。
+      \item[$\circ$] \textbf{高并发与安全认证}：利用FastAPI异步特性和Uvicorn服务器，支持1000+并发请求稳定运行；集成JWT中间件实现权限控制，权限校验平均耗时200ms，支持日均3000+次安全访问。
+      \item[$\circ$] \textbf{智能推荐与数据分析}：集成Pandas+Scikit-learn实现用户行为分析，使用TF-IDF和余弦相似度算法构建个性化推荐系统，推荐准确率达75\%以上，日均处理分析数据10万+条。
+      \item[$\circ$] \textbf{前端UI与数据可视化}：基于Vue.js+Element UI构建高可用博客界面，集成Matplotlib+ECharts.js实现阅读趋势、用户活跃度等数据可视化展示，提升内容运营效率。
     \end{itemize}
   \end{normalsize}
