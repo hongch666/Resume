@@ -3,13 +3,14 @@
     \begin{normalsize}
       \begin{itemize}
         \item \textbf{项目功能}：学生小程序端支持预约点餐、在线支付、取餐提醒，餐厅网页端管理菜品、套餐、订单排程，且平台集成本地大语言模型，餐厅员工通过智能助手获取订单优化建议和库存查询。
-        \item \textbf{相关技术}: SpringBoot/SpringCloud/RabbitMQ/MyBatisPlus/MySQL/Redis/Ollama/Vue.js
+        \item \textbf{相关技术}: Java/SpringBoot/SpringCloud/RabbitMQ/MyBatisPlus/MySQL/Redis/Ollama/Vue.js
         \item \textbf{个人负责}：设计高可用微服务架构，主导核心服务开发（订单/支付/菜品/大模型服务），完成Ollama大模型本地化部署和接入项目，并完成员工网页端前端模块开发（菜品管理/员工管理/销售报表）。
         \item \textbf{技术亮点}：
         \setlength{\itemindent}{1em} % 子项缩进调整
+          \item[$\circ$] \textbf{Spring后端与数据管理}：基于Spring Boot+MyBatisPlus实现高效数据访问，MySQL主从分离优化订单与库存查询性能，单表日均处理订单数据10万+条，查询响应时间降至50ms，显著提升系统稳定性与扩展性。
           \item[$\circ$] \textbf{微服务架构设计}：采用Spring Boot分层模式和Spring Cloud组件（Nacos、Gateway），将订单、用户、菜品等模块拆分为独立服务，提升代码复用率和可维护性。
           \item[$\circ$] \textbf{高并发优化}：使用Redis主从+哨兵模式缓存菜品信息，查询时间从600ms降至70ms，集成RabbitMQ实现异步解耦，系统吞吐量提升50\%，支撑10万+并发请求。
           \item[$\circ$] \textbf{智能化与认证}：集成Ollama本地大模型通过SpringAI提供智能订单处理，提升出餐效率30\%；实现微信小程序登录与JWT认证，支持日均300+次认证请求。
-          \item[$\circ$] \textbf{数据可视化与自动化}：基于Vue.js+Echarts构建报表模块，实现订单量、销量等数据可视化，提升运营决策效率20\%；Spring Task定时任务实现订单超时自动取消等功能。
+          \item[$\circ$] \textbf{数据可视化与自动化}：基于Vue.js+Echarts构建报表模块，实现订单量、销量等数据可视化，提升运营决策效率20\%。
         \end{itemize}
     \end{normalsize}
