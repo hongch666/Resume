@@ -32,12 +32,12 @@
 ]{texgyretermes}
 
 \RequirePackage[
-	a4paper,
-	left=0.8in,
-	right=0.8in,
-	top=0.70in,
-	bottom=0.55in,
-	nohead
+  a4paper,
+  left=0.8in,
+  right=0.8in,
+  top=0.70in,
+  bottom=0.55in,
+  nohead
 ]{geometry}
 
 \RequirePackage{titlesec}
@@ -93,13 +93,8 @@
   \leftline{\faEnvelope\ \space {#1}}
 }
 
-
-\newcommand{\phone}[1]{
-  \leftline{\faPhone\ \space {#1}}
-}
-
-
 \newcommand{\phone}[1]{\faPhone\ {#1}}
+
 % defines one's linkedin
 % usage: \linkedin{<linkedin>}
 \newcommand{\linkedin}[2][]{\faLinkedin\ 
