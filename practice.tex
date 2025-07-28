@@ -8,10 +8,10 @@
       \item[$\circ$] \textbf{后端框架与数据库}：基于NestJS实现机器人、任务、调度、逆向物流等模块接口，使用TypeORM建模并实现MySQL多表关联，通过Repository模式封装数据访问层，结合NestJS管道实现接口参数自动校验与数据转换，优化MySQL复杂查询逻辑与索引策略，提升性能约40\%及数据安全性。
       \item[$\circ$] \textbf{高并发与缓存优化}：利用Node.js异步事件驱动与非阻塞I/O模型保持系统高吞吐，结合NestJS拦截器与Redis缓存实现机器人状态缓存，接口响应时间由500ms降低至20ms，支撑10万级高并发请求。
       \item[$\circ$] \textbf{消息队列与定时调度}：集成RabbitMQ实现任务异步投递与机器人动态分配，基于cron表达式实现定时巡检与数据同步，结合NestJS守卫实现权限控制，日均调度任务数超5000条，任务分发延迟控制在200ms内。
-      \item[$\circ$] \textbf{第三方平台集成}：主导影刀RPA、Coze AI、钉钉开放平台、Shopify/Shopline、快递100API等多平台API对接，基于NestJS自定义装饰器实现统一认证与权限校验，支撑日均500+用户高并发登录，落地RPA机器人管理、AI知识库、物流跟踪等核心功能。
+      \item[$\circ$] \textbf{第三方平台集成}：主导阿里巴巴开放平台订单管理（查询、同步、发货）、腾讯文档自动化操作，集成影刀RPA、Coze AI等API，基于NestJS自定义装饰器和钉钉开放平台实现统一认证、权限校验与钉钉高并发登录，支撑多业务场景高效落地。
       \item[$\circ$] \textbf{竞对数据分析}：基于爬虫技术采集竞对商品数据，监控商品排位变化，实现价格、销量等关键指标追踪与分析，日均采集商品数据3万+条，覆盖500+竞对SKU监控。
       \item[$\circ$] \textbf{日志记录与监控}：使用MongoDB结合Mongoose建模，结合NestJS异常过滤器与拦截器统一记录系统关键业务操作与用户行为日志，支持日均2万+操作日志高效写入，突破关系型数据库字段限制。
     \setlength{\itemindent}{0em} % 子项缩进调整
-    \item \textbf{相关技术}: Node.js/NestJS/TypeORM/MySQL/Redis/MongoDB/RabbitMQ/Coze AI/钉钉开放平台
+    \item \textbf{相关技术}: Node.js/NestJS/TypeORM/Mongoose/Redis/RabbitMQ/Coze AI/主流开放平台
     \end{itemize}
   \end{normalsize}
