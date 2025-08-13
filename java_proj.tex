@@ -1,15 +1,15 @@
 \subsection{\textbf{校园餐厅智能化场景下的外卖点单和管理平台} \hspace{2cm}{2025.01 -- 2025.04}}
-\fontsize{11pt}{0}{\textbf{项目描述}：面向高校食堂数字化转型，打造基于SpringCloud微服务的智能外卖平台，支持小程序点餐、在线支付、智能助手辅助管理，提升餐厅运营效率与用户体验。}
+\fontsize{11pt}{0}{\textbf{项目描述}：面向高校食堂数字化转型，打造基于\textbf{SpringCloud微服务}的智能外卖平台，支持\textbf{小程序点餐}、\textbf{在线支付}、\textbf{智能助手辅助管理}，提升餐厅运营效率与用户体验。}
     \begin{normalsize}
       \begin{itemize}
-        \item \textbf{个人负责}：设计高可用微服务架构，主导核心服务开发（订单/支付/菜品/大模型服务），完成Ollama大模型本地化部署和接入项目，并完成员工网页端前端模块开发（菜品管理/员工管理/销售报表）。
+        \item \textbf{个人负责}：设计\textbf{高可用微服务架构}，主导\textbf{核心服务开发}（订单/支付/菜品/大模型服务），完成\textbf{Ollama大模型}本地化部署和接入项目，并完成员工网页端\textbf{前端模块开发}（菜品管理/员工管理/销售报表）。
         \item \textbf{技术亮点}：
         \setlength{\itemindent}{1em} % 子项缩进调整
-          \item[$\circ$] \textbf{Spring后端与数据管理}：基于Spring Boot+MyBatisPlus实现高效数据访问，MySQL主从分离优化订单与库存查询性能，单表日均处理订单数据10万+条，查询响应时间降至50ms，显著提升系统稳定性与扩展性。
-          \item[$\circ$] \textbf{微服务架构设计}：采用Spring Boot分层模式和Spring Cloud组件（Nacos、Gateway），将订单、用户、菜品等模块拆分为独立服务，提升代码复用率和可维护性。
-          \item[$\circ$] \textbf{高并发优化}：使用Redis主从+哨兵模式缓存菜品信息，查询时间从600ms降至70ms，集成RabbitMQ实现异步解耦，系统吞吐量提升50\%，支撑10万+并发请求。
-          \item[$\circ$] \textbf{智能化与认证}：集成Ollama本地大模型通过SpringAI提供智能订单处理，提升出餐效率30\%；实现微信小程序登录与JWT认证，支持日均300+次认证请求。
-          \item[$\circ$] \textbf{数据可视化与自动化}：基于Vue.js+Echarts构建报表模块，实现订单量、销量等数据可视化，提升运营决策效率20\%。
+          \item[$\circ$] \textbf{Spring后端与数据管理}：基于\textbf{Spring Boot+MyBatisPlus}实现高效数据访问，\textbf{MySQL主从分离}优化订单与库存查询性能，单表日均处理订单数据\textbf{10万+条}，查询响应时间降至\textbf{50ms}，显著提升系统\textbf{稳定性与扩展性}。
+          \item[$\circ$] \textbf{微服务架构设计}：采用\textbf{Spring Boot分层模式}和\textbf{Spring Cloud组件}（Nacos、Gateway），将订单、用户、菜品等模块拆分为\textbf{独立服务}，提升\textbf{代码复用率和可维护性}。
+          \item[$\circ$] \textbf{高并发优化}：使用\textbf{Redis主从+哨兵模式}缓存菜品信息，查询时间从\textbf{600ms降至70ms}，集成\textbf{RabbitMQ}实现异步解耦，系统吞吐量提升\textbf{50\%}，支撑\textbf{10万+并发请求}。
+          \item[$\circ$] \textbf{智能化与认证}：集成\textbf{Ollama本地大模型}通过\textbf{SpringAI}提供智能订单处理，提升\textbf{出餐效率30\%}；实现\textbf{微信小程序登录}与\textbf{JWT认证}，支持日均\textbf{300+次认证请求}。
+          \item[$\circ$] \textbf{数据可视化与自动化}：基于\textbf{Vue.js+Echarts}构建报表模块，实现\textbf{订单量、销量等数据可视化}，提升\textbf{运营决策效率20\%}。
         \setlength{\itemindent}{0em} % 子项缩进调整
         \item \textbf{相关技术}: Java/SpringBoot/SpringCloud/RabbitMQ/MyBatisPlus/MySQL/Redis/Ollama/Vue.js
         \end{itemize}
