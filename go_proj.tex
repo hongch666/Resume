@@ -8,6 +8,7 @@
   \item[$\circ$] \textbf{高性能后端架构}：采用\textbf{Gin框架分层设计}（路由层→逻辑层→数据访问层），结合\textbf{Goroutine}实现高并发异步处理，系统具备良好\textbf{扩展性与稳定性}，接口响应时间降至\textbf{60ms}，支持\textbf{大规模并发访问}，并集成\textbf{JWT鉴权中间件}，保障\textbf{数据安全与访问权限}。
   \item[$\circ$] \textbf{高效数据存储}：基于\textbf{Gorm+MySQL}实现商品、订单、用户等核心数据的高效读写与复杂事务处理，结合\textbf{索引优化与数据校验机制}，单表日均处理数据\textbf{5万+条}，显著提升\textbf{数据一致性、查询性能与系统扩展能力}。
   \item[$\circ$] \textbf{搜索引擎优化}：集成\textbf{ElasticSearch}实现多条件商品搜索（品类、校区、价格区间），响应时间从\textbf{300ms优化至60ms}，有效提升\textbf{校园二手交易匹配效率}，支撑日均\textbf{3000+次安全访问}。
+  \item[$\circ$] \textbf{用户实时聊天}：基于\textbf{WebSocket}在\textbf{Gin}实现交易沟通，维护连接队列管理活跃连接，峰值并发达\textbf{2k+}，结合\textbf{JWT}和\textbf{Redis}同步在线状态，消息异步持久化到\textbf{MySQL}并由\textbf{Goroutine}写入，支持心跳、重连与有序投递，峰值吞吐约\textbf{5k 消息/s}，日均持久化\textbf{50k+条}。
   \item[$\circ$] \textbf{前端界面开发}：使用\textbf{React+Ant Design}构建管理端和学生端界面，实现商品、订单、用户等模块的高效管理，优化\textbf{表单、表格与交互流程}，页面操作效率提升\textbf{40\%}，显著提升\textbf{学生操作体验和系统易用性}。
     \setlength{\itemindent}{0em} % 子项缩进调整
     \item \textbf{相关技术}: Go/Gin/Gorm/MySQL/ElasticSearch/React/Ant Design
