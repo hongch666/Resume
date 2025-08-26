@@ -15,16 +15,16 @@
 \usepackage{geometry}
 \geometry{
   a4paper,
-  left=0.4in,
-  right=0.4in,
+  left=0.3in,
+  right=0.3in,
   top=0.3in,
   bottom=0.2in,
   nohead
 }
 
 % 调整行间距和列表间距
-\renewcommand{\baselinestretch}{0.95}
-\setlength{\parskip}{-2pt}
+\renewcommand{\baselinestretch}{0.9}
+\setlength{\parskip}{-6pt}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -37,26 +37,18 @@
 \begin{normalsize}
   \begin{itemize}
     \input{java_mini}
-    \input{go_mini}
-    \input{node_mini}
-    \input{python_mini}
-    \input{behind}
     \input{db}
     \input{common}
     
   \end{itemize}
 \end{normalsize}
 
-\input{practice}
+\input{practice_java}
 
 
 \section{项目经历}
 
 \input{java_proj} % 引入Java项目经历文件
-
-\input{go_proj} % 引入Go项目经历文件
-
-\input{python_proj} % 引入Python项目经历文件
 
 \input{awards} % 引入荣誉奖项文件
 
